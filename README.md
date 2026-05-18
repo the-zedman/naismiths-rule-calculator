@@ -29,8 +29,6 @@ Climb adds 1 hour per 600 m of ascent (the original Naismith formula). The speed
 index.html          — Calculator (main page)
 about.html          — Background on the formula and its development
 privacy-policy.html — Privacy policy
-weblogs.html        — Web logs page
-generate_weblogs.py — Script to generate the weblogs page
 sitemap.xml         — XML sitemap
 robots.txt          — Robots directives
 site.webmanifest    — PWA manifest
