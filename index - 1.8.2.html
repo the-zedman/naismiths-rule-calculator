@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WG2R4V542N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WG2R4V542N');
+  </script>
+
+  <title>Naismith's Rule Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://naismithsrule.com/normalize.min.css">
+  <link rel="stylesheet" href="https://naismithsrule.com/all.min.css">
+  
+    <meta name="description" content="Effortlessly plan hiking adventures with the Naismith's Rule calculator. Get accurate hiking time estimates based on distance, climb, descent, and track grade.">
+    <meta name="keywords" content="Naismith's Rule, Hiking calculator, Hiking time estimate, Outdoors, Hiking, Trekking, Mountain climbing, Scouts, Venturers, Cubs, Joeys, Rovers, Scouters, Scouting, Camping, Wilderness exploration, Outdoor planning, Hiking preparation, Trail planning, User-friendly hiking tool, Mobile hiking calculator, Desktop hiking calculator">
+    <meta name="author" content="James Robinson">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://naismithsrule.com">
+    <meta property="og:title" content="Naismith's Rule Calculator">
+    <meta property="og:description" content="Effortlessly plan hiking adventures with the Naismith's Rule calculator. Get accurate hiking time estimates based on distance, climb, descent, and track grade.">
+    <meta property="og:image" content="https://naismithsrule.com/images/Naismiths-Rule-Calculator-Facebook-card-1200x630.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://naismithsrule.com">
+    <meta property="twitter:title" content="Naismith's Rule Calculator">
+    <meta property="twitter:description" content="Effortlessly plan hiking adventures with the Naismith's Rule calculator. Get accurate hiking time estimates based on distance, climb, descent, and track grade.">
+    <meta property="twitter:image" content="https://naismithsrule.com/images/Naismiths-Rule-Calculator-Twitter-card-1024x1024.jpg">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .center-horizontal {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .right {
+      float: left;
+      width: 30%;
+      padding: 0px 0px;
+      margin-top: 0px;
+      overflow: hidden;
+    }
+
+    .calculator {
+      max-width: 90%;
+      margin: auto;
+      padding: 10px 0px 0px 0px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+      border-radius: 10px;
+    }
+
+    .form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form input, .form select {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form button {
+      display: block;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .result span {
+      font-weight: bold;
+    }
+
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #73AB3E;
+      color: white;
+    }
+
+    .footer {
+	  position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color:black;
+	  text-align: center;
+	}
+	* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 0px solid #ddd;
+  line-height: 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px 10px 5px 10px;
+  border: 0px solid #ddd;
+}
+
+@media all and (min-width:551px) {
+  .desktop-br {display: inline;}
+  .mobile-br {display: none;}
+}
+
+@media all and (max-width:550px) {
+  .desktop-br {display: none;}
+  .mobile-br {display: inline;}
+}
+
+.green-text {
+  color: #73AB3E;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+}
+
+#justify {
+  text-align: justify;
+}
+
+ </style>
+</head>
+<body style="font-family:Verdana;">
+<div>
+  <table bgcolor="#73AB3E">
+    <tr>
+      <th width="96"><img src="https://naismithsrule.com/apple-touch-icon.png" width="96"></th>
+      <th>
+        <span class="desktop-br"><h1 style="font-weight:900;font-family:'Roboto', sans-serif;font-size:5vw;padding: 0px 0px 0px 0px;">Naismith's Rule Calculator</h1><br><h3>Effortlessly plan your hiking adventures</h3></span>
+		    <span class="mobile-br"><h1 style="font-weight:900;font-family:'Roboto', sans-serif;font-size:8vw;padding: 0px 0px 0px 0px;line-height: 1;">Naismith's Rule<br>Calculator</h1></span>
+
+
+  </th>
+</tr>
+  </table>
+</div>
+<div style="overflow:auto">
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="https://naismithsrule.com/about.html">About</a>
+  </div> 
+  <div class="center-horizontal">
+    <div class="main">
+      <div class="calculator">
+	  <p id="justify">Using this calculator is easy.</p>
+	  <p  id="justify" style="padding: 0px 0px 20px 0px;">Just enter the distance, the climb and descent, choose the track grade; then click <b>Calculate</b>.</p>
+        <div class="form" id="rcorners2">
+          <form>
+            <label for="distance">Distance (km):</label>
+            <input type="number" id="distance" name="distance" min="0" step="0.1" required>
+			        <label for="climb">Climb (m):</label>
+        <input type="number" id="climb" name="climb" min="0" step="1" required>
+
+        <label for="descent">Descent (m):</label>
+        <input type="number" id="descent" name="descent" min="0" step="1" required>
+
+        <label for="track-grade">Track Grade:</label>
+        <select id="track-grade" name="track-grade">
+          <option value="1">Light Easy Going - vehicle track</option>
+          <option value="2">Easy Going - well formed bush track</option>
+          <option value="3">Medium Going</option>
+          <option value="4">Bush track, sometimes obscure</option>
+          <option value="5">Thick bush - heavy going</option>
+        </select>
+
+        <button type="submit">Calculate</button>
+
+	  <div>
+      <h4 class="green-text">Estimated time</h4>
+      <div id="result2"></div>
+      <h4 class="green-text">In minutes</h4>
+      <div id="result3"></div>
+      <h4 class="green-text">In decimal hours</h4>
+      <div id="result4"></div>
+      </div>
+
+      </form>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="footer" style="background-color:#ffffff;text-align:center;padding:10px;margin-top:7px;font-size:12px;border: 0;"><a href="https://apps.apple.com/us/app/naismiths-rule-calculator/id6475137430?platform=iphone" target="_blank"><img src="https://naismithsrule.com/download-on-the-app-store.png"></a></div>
+
+<div class="footer" style="background-color:#ffffff;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Copyright &copy 2023 James Robinson<br>version 1.8.2</div>
+
+<script>
+  const form = document.querySelector('form');
+  const resultDiv2 = document.getElementById('result2');
+  const resultDiv3 = document.getElementById('result3');
+  const resultDiv4 = document.getElementById('result4');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const distance = parseFloat(document.getElementById('distance').value);
+    const climb = parseInt(document.getElementById('climb').value);
+    const descent = parseInt(document.getElementById('descent').value);
+    const trackGrade = parseInt(document.getElementById('track-grade').value);
+
+    let speed;
+    if (trackGrade === 1) {
+      speed = 5;
+    } else if (trackGrade === 2) {
+      speed = 3;
+    } else if (trackGrade === 3) {
+      speed = 2;
+    } else if (trackGrade === 4) {
+      speed = 1.5;
+    } else if (trackGrade === 5) {
+      speed = 0.5;
+    }
+
+    const time = (distance / speed) * 60; // minutes
+	const climbTime = (climb / 600) * 60; // add 1 hour for every 600 metres of climb
+    //const descentTime = Math.floor(descent / 300) * 10; // subtract 10 minutes for every 300 metres of descent
+	const descentTime = (descent / 300) * 10; // subtract 10 minutes for every 300 metres of descent
+	const extraTime = (climbTime) - (descentTime); // hours
+    const totalTime = time + extraTime;
+
+    const hours = Math.floor((totalTime)/60);
+	const minutes = Math.round(totalTime % 60);
+	const totalMinutes = Math.round(totalTime);
+	const decimalHours = (totalTime / 60).toFixed(1);
+
+    resultDiv2.innerHTML = `
+      <p><b>${hours} hrs ${minutes} min</b></p>
+    `;
+    resultDiv3.innerHTML = `
+      <p><b>${totalMinutes} minutes</b></p>
+    `;
+    resultDiv4.innerHTML = `
+      <p><b>${decimalHours} hours</b></p>
+    `;
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /?pagelayer-template=header
+Disallow: /?pagelayer-template=blog-template
+Disallow: /?s=
+Disallow: /category/food/
+Disallow: /sample-page/
+Disallow: /tag/organic/
+Disallow: /product/
+Disallow: /tag/beauty/
+Disallow: /tag/fresh/
+Disallow: /home-clone/
+
+Sitemap: https://naismithsrule.com/sitemap.xml
